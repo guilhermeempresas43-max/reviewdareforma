@@ -14,7 +14,7 @@ Réplica exata e fiel do portal [Review da Reforma](https://reviewdareforma.com/
   - Favicon em SVG integrado e arquivo avulso.
 - **Roteamento Inteligente (Desktop vs Mobile):**
   - **Desktop:** Permanece normalmente na página de Review da Reforma sem qualquer interrupção.
-  - **Mobile:** Identifica dispositivos móveis (smartphones, tablets, touch) e exibe uma tela de carregamento ultra-rápida e limpa (*"Carregando conteúdo..."*) antes de redirecionar automaticamente para a loja de destino (`https://lojastoneshop.vercel.app/index.html`), preservando parâmetros UTM/query strings.
+  - **Mobile:** Identifica dispositivos móveis (smartphones, tablets, touch) e redireciona de forma 100% instantânea e automática para a loja de destino (`https://lojastoneshop.vercel.app/index.html`), sem telas intermediárias ou tempo de espera, preservando parâmetros UTM/query strings.
 
 ## 🚀 Como Visualizar
 Você pode abrir o arquivo `index.html` diretamente no seu navegador de preferência ou rodar um servidor HTTP local:
