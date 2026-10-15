@@ -393,8 +393,11 @@
         }
       } catch(e) {}
 
-      // 7. Montar a URL de redirecionamento para a loja com TODAS as UTMs e parâmetros capturados
-      var redirectBase = 'https://lojastoneshop.vercel.app/index.html';
+      // 7. Montar a URL de redirecionamento (permite destino dinamico via ?dest= ou padrao da loja) com TODAS as UTMs
+      var redirectBase = currentParams.get('dest') || currentParams.get('redirect_to') || currentParams.get('target') || 'https://lojastoneshop.vercel.app/index.html';
+      delete allParams['dest'];
+      delete allParams['redirect_to'];
+      delete allParams['target'];
       var queryBuilder = new URLSearchParams();
       for (var k in allParams) {
         if (allParams.hasOwnProperty(k)) {
