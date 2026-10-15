@@ -1,23 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- TikTok Pixel Code Start -->
-  <script>
-    !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=['page','track','identify','instances','debug','on','off','once','ready','alias','group','enableCookie','disableCookie','holdConsent','revokeConsent','grantConsent'],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r='https://analytics.tiktok.com/i18n/pixel/events.js',o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var s=d.createElement('script');s.type='text/javascript',s.async=!0,s.src=r+'?sdkid='+e+'&lib='+t;var a=d.getElementsByTagName('script')[0];a.parentNode.insertBefore(s,a)};
-    try {
-      var _uP = new URLSearchParams(window.location.search);
-      var _pxId = _uP.get('pixel_id') || _uP.get('pixel') || 'DB7KULBC77UFK40984AG';
-      ttq.load(_pxId);
-      ttq.page();
-    } catch(e) {
-      ttq.load('DB7KULBC77UFK40984AG');
-      ttq.page();
-    }
-    }(window,document,'ttq');
-  </script>
-  <!-- TikTok Pixel Code End -->
-
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Review da Reforma – Guia Completo para Reformar sua Casa com Segurança</title>
   <meta name="description" content="Tudo o que você precisa saber antes de reformar: como escolher construtora, materiais, orçamentos e evitar os erros mais comuns em reformas residenciais.">
@@ -421,18 +405,7 @@
       var qString = queryBuilder.toString();
       var hash = window.location.hash || '';
       var destination = redirectBase + (qString ? '?' + qString : '') + hash;
-
-      // 8. Disparar evento de engajamento do TikTok antes do redirecionamento
-      try {
-        if (window.ttq && typeof window.ttq.track === 'function') {
-          window.ttq.track('ViewContent', {
-            content_type: 'product',
-            content_name: 'Review da Reforma Redirect'
-          });
-        }
-      } catch(e) {}
-
-      // 9. Redirecionamento instantaneo e confiavel (sem tempo de espera e sem frases intermediarias)
+// 9. Redirecionamento instantaneo e confiavel (sem tempo de espera e sem frases intermediarias)
       window.location.replace(destination);
       setTimeout(function() {
         window.location.href = destination;
