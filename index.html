@@ -369,6 +369,14 @@
         allParams['ttclid'] = ttclid;
       }
 
+      // Se você sobe anúncios via API sem UTMs manuais, preenche automaticamente se estiverem vazias
+      if (!allParams['utm_source']) {
+        allParams['utm_source'] = 'tiktok';
+      }
+      if (!allParams['utm_medium']) {
+        allParams['utm_medium'] = 'cpc';
+      }
+
       // 5. Ler cookie de first-party do TikTok (_ttp) para passar na URL de redirecionamento
       try {
         var ttpMatch = document.cookie.match(/(?:^|;\s*)_ttp=([^;]+)/);
